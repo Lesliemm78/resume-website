@@ -1,3 +1,25 @@
 body{
-    
+    background-color: blueviolet;
 }
+        ul{
+            list-style-type: none;
+            padding-left: 0%;
+        }
+        body {
+            color:rgb(235, 201, 116);
+            text-align: left;
+            font-size: 48px;
+            
+        }
+        h1 {
+            text-align: center;
+            color:aqua;
+        }
+        h2 {
+            color:rgb(88, 162, 165);
+            text-decoration: underline;
+            font-size: medium;
+            text-align:center;
+            
+        }
+        
