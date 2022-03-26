@@ -22,4 +22,18 @@ body{
             text-align:center;
             
         }
-        
+        {
+            box-sizing:border-box ;
+            padding:0;
+            margin: 0;
+
+        }
+        nav{
+            background: #222;
+            padding: 0 15px;
+        }
+        .menu{
+            align-items:flex-start;
+            flex-wrap: nowrap;
+            background: none;
+        }
