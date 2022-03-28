@@ -1,4 +1,4 @@
-body{
+body {
     background-color: blueviolet;
 }
 nav{
@@ -8,7 +8,7 @@ nav{
         padding: 20px 50px;
         box-shadow: 0 1px 8px #ddd;
 }
-ul{
+ul {
     list-style-type: none;
     /*padding-left: 20px;*/
     display: flex;
@@ -17,23 +17,25 @@ ul{
     align-content:space-between;
     
 }
-        body {
-            color:rgb(235, 201, 116);
-            text-align: left;
-            font-size:medium;
-            
-        }
-        h1 {
-            text-align: center;
-            color:aqua;
-        }
-        /*h2{
-            color:rgb(88, 162, 165);
-            text-decoration: underline;
-            font-size: medium;
-            text-align:center;
-            
-        }/*
+body {
+  color: rgb(235, 201, 116);
+  text-align: left;
+  font-size:medium;
+}
+
+h1 {
+  text-align: center;
+  color: aqua;
+}
+
+/*
+h2{
+  color:rgb(88, 162, 165);
+  text-decoration: underline;
+  font-size: medium;
+  text-align: center;          
+}
+/*
         
 
         
