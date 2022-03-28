@@ -4,11 +4,11 @@ html {
 }
 
 nav {
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        padding: 20px 50px;
-        box-shadow: 0 1px 8px #ddd;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
 }
 
 ul {
