@@ -1,41 +1,40 @@
 html {
-    --page-background-color: #8c65b5;
-    --page-text-color: #8eb565;
+  --page-background-color: #8c65b5;
+  --page-text-color: #8eb565;
 }
 
 nav {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 20px;
-    display: flex;
-    justify-content:stretch;
-    column-gap: 35px;
-    align-content:space-between; 
+  list-style-type: none;
+  padding-left: 20px;
+  display: flex;
+  justify-content: stretch;
+  column-gap: 35px;
+  align-content: space-between;
 }
 
 body {
-    background-color: var(--page-background-color);
-    color: rgb(235, 201, 116);
-    text-align: left;
-    font-size:medium;
+  background-color: var(--page-background-color);
+  color: rgb(235, 201, 116);
+  text-align: left;
+  font-size: medium;
 }
 
 h1 {
-    text-align: center;
-    color: var(--page-text-color);
+  text-align: center;
+  color: var(--page-text-color);
 }
 
 h2 {
-    color: var(--page-text-color);
-    text-decoration: underline;
-    font-size: medium;
-    text-align: center;          
+  color: var(--page-text-color);
+  text-decoration: underline;
+  font-size: medium;
+  text-align: center;
 }
-    

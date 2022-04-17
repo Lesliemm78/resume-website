@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <title>Leslie Moody</title>
-    <link rel="stylesheet" href="Style_Sheet.css">
-    <head>
+  <title>Leslie Moody</title>
+  <link rel="stylesheet" href="Style_Sheet.css" />
+  <script src="./script.js"></script>
+  <!-- <link rel="script" href="script.js"> -->
 
-      <h1> Leslie Moody</h1>
-    <nav>
-        <div id="menu">
-            <ul>
-                <li class="active"><a href="#"> <h2>Home</h2></a></li>
-                <li class="education"><a href=#><h2>Education</h2></a></li>
-                <li class="career"><a href=#><h2>Career</h2></a></li>
-                <li class="travels"><a href=#><h2>Travels</h2></a></li>
-            </ul>
-        </div>
-    </nav>        
-    </head>
+  <head>
+    <h1>Leslie Moody</h1>
 
-    <body>
-        <p>This is my webpage about me, by me</p>
-        <p>Education</p>
-        <p>Career</p>
-        <p>Travels</p>
+    <div class="tab">
+      <button class="tablinks" onclick="openItem(event, 'Home')">Home</button>
+      <button class="tablinks" onclick="openItem(event, 'Education')">
+        Education
+      </button>
+      <button class="tablinks" onclick="openItem(event, 'Career')">
+        Career
+      </button>
+      <button class="tablinks" onclick="openItem(event, 'Travels')">
+        Travels
+      </button>
+    </div>
+  </head>
 
-    </body>
+  <body>
+    <div id="Home" class="tabcontent">
+      <h1>Home</h1>
+      <p>This is my website about me, by me</p>
+    </div>
+    <div id="Education" class="tabcontent">
+      <h1>Education</h1>
+      <p>I went to school</p>
+    </div>
+    <div id="Career" class="tabcontent">
+      <h1>Career</h1>
+      <p>I have worked</p>
+    </div>
+    <div id="Travels" class="tabcontent">
+      <h1>Travels</h1>
+      <p>I have been places</p>
+    </div>
+  </body>
 </html>
-
-
