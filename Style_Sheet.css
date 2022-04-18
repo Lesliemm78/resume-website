@@ -3,38 +3,41 @@ html {
   --page-text-color: #8eb565;
 }
 
-nav {
+.tab {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px 50px;
-  box-shadow: 0 1px 8px #ddd;
 }
 
-ul {
+.tablinks {
   list-style-type: none;
   padding-left: 20px;
   display: flex;
   justify-content: stretch;
+  font-size: 24pt;
+  color: var(--page-text-color);
   column-gap: 35px;
+  /* text-decoration:burlywood; */
   align-content: space-between;
+  background-color: #8c65b5;
+  border: none
+}
+body{
+  background-color: var(--page-background-color);
 }
 
-body {
-  background-color: var(--page-background-color);
-  color: rgb(235, 201, 116);
-  text-align: left;
-  font-size: medium;
-}
+
 
 h1 {
+  font-family:serif;
   text-align: center;
   color: var(--page-text-color);
+  text-decoration: underline;
 }
 
-h2 {
+p {
   color: var(--page-text-color);
-  text-decoration: underline;
-  font-size: medium;
+  font-size: 20pt;
   text-align: center;
 }

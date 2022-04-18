@@ -19,7 +19,7 @@
 
 
 
-const openTab = (clickEvent, tabName) => {
+const openItem = (clickEvent, tabName) => {
   const [...tabContent] = document.querySelectorAll('.tabcontent')
   const [...tabLinks] = document.querySelectorAll('.tablinks')
   const activeTab = document.querySelector(`#${ tabName }`)
