@@ -19,10 +19,10 @@
 
 
 
-const openItem = (clickEvent, tabName) => {
+function openItem(clickEvent, tabName) {
   const [...tabContent] = document.querySelectorAll('.tabcontent')
   const [...tabLinks] = document.querySelectorAll('.tablinks')
-  const activeTab = document.querySelector(`#${ tabName }`)
+  const activeTab = document.querySelector(`#${tabName}`)
 
   tabContent.forEach((tab) => tab.style.display = 'none')
   tabLinks.forEach((tab) => tab.className = tab.className.replace(' active', ''))
@@ -30,3 +30,4 @@ const openItem = (clickEvent, tabName) => {
   activeTab.style.display = 'block'
   clickEvent.currentTarget.className += ' active'
 }
+//Default state shows all tabs. Needs to be defaulted to hidden.

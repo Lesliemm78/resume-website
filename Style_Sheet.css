@@ -30,7 +30,8 @@ body{
 
 
 h1 {
-  font-family:serif;
+  font-family: 'Indie Flower', cursive;
+  /* font-family:serif; */
   text-align: center;
   color: var(--page-text-color);
   text-decoration: underline;
