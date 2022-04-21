@@ -1,6 +1,8 @@
 // function openItem(evt, tabName) {
 //   var i, tabcontent, tablinks;
 
+import { version } from "typescript"
+
 //   tabcontent = document.getElementsByClassName("tabcontent");
 
 //   for (i = 0; i < tabcontent.length; i++) {
@@ -30,4 +32,3 @@ function openItem(clickEvent, tabName) {
   activeTab.style.display = 'block'
   clickEvent.currentTarget.className += ' active'
 }
-//Default state shows all tabs. Needs to be defaulted to hidden.
