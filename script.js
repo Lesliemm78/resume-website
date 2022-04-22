@@ -32,3 +32,4 @@ function openItem(clickEvent, tabName) {
   activeTab.style.display = 'block'
   clickEvent.currentTarget.className += ' active'
 }
+//The function is to hide/show the different sections of the webpage on click. 
