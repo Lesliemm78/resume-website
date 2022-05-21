@@ -9,35 +9,47 @@
     <h1> Leslie Moody </h1>
 
     <div class="tab">
-      <button class="tablinks" onclick="openItem(event, 'Home')">Home</button>
-      <button class="tablinks" onclick="openItem(event, 'Education')">
+      <button class="tablinks" onclick="goTo('#home')">Home</button>
+      <button class="tablinks" onclick="goTo('#education')">
         Education
       </button>
-      <button class="tablinks" onclick="openItem(event, 'Career')">
-        Career
+      <button class="tablinks" onclick="goTo('#career')">
+      Career
       </button>
-      <button class="tablinks" onclick="openItem(event, 'Travels')">
+      <button class="tablinks" onclick="goTo('#travels')">
         Travels
+      </button>
+      <button class="tablinks" onclick="goTo('#projects')">
+        Projects
       </button>
     </div>
   </head>
 
+  <template id="Home" class="tabcontent">
+    <!-- <h1>Home</h1> -->
+    <p>This is my website about me, by me</p>
+  </template>
+  <template id="Education" class="tabcontent">
+    <!-- <h1>Education</h1> -->
+    <p>I went to school</p>
+  </template>
+  <template id="Career" class="tabcontent">
+    <!-- <h1>Career</h1> -->
+    <p>I have worked</p>
+  </template>
+  <template id="Travels" class="tabcontent">
+    <!-- <h1>Travels</h1> -->
+    <p>I have been places</p>
+  </template>
+  <template id="NotFound">
+    <!-- <h1>Not Found</h1> -->
+    <p>Page not found</p>
+  </template>
+  <template id="Projects" class="tabcontent">
+    <!-- <h1>Travels</h1> -->
+    <p>Games and fun coding work</p>
+  </template>
   <body>
-    <div id="Home" class="tabcontent">
-      <!-- <h1>Home</h1> -->
-      <p>This is my website about me, by me</p>
-    </div>
-    <div id="Education" class="tabcontent">
-      <!-- <h1>Education</h1> -->
-      <p>I went to school</p>
-    </div>
-    <div id="Career" class="tabcontent">
-      <!-- <h1>Career</h1> -->
-      <p>I have worked</p>
-    </div>
-    <div id="Travels" class="tabcontent">
-      <!-- <h1>Travels</h1> -->
-      <p>I have been places</p>
-    </div>
+    <div id="main"></div>
   </body>
 </html>

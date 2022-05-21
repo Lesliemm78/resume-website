@@ -22,7 +22,8 @@ html {
   align-content: space-between;
   background-color: #8c65b5;
   border: none
-}
+  }
+
 body{
   background-color: var(--page-background-color);
 }
@@ -34,6 +35,9 @@ h1 {
   /* font-family:serif; */
   text-align: center;
   color: var(--page-text-color);
+}
+
+button:active {
   text-decoration: underline;
 }
 
