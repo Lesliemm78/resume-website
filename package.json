@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "build": "npm run build:sass && npm run build:ts",
+    "build:sass": "sass modules/sudoku/Sudoku.scss modules/sudoku/Sudoku.css",
+    "build:ts": "tsc modules/sudoku/Sudoku.ts"
+  },
   "devDependencies": {
     "prettier": "2.6.2"
   },
