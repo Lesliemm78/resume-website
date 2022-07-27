@@ -20,9 +20,16 @@ let isPlayer_O_Turn = false
 
 startGame()
 
+if (!restartButton || !winningMessageTextElement || !winningMessageElement) {
+    throw new Error('No reset button found')
+}
+
 restartButton.addEventListener('click', startGame)
 
 function startGame() {
+    if (!winningMessageElement) {
+        throw new Error('missing winning message element')
+    }
     isPlayer_O_Turn = false
     cellElements.forEach(cell => {
         cell.classList.remove(PLAYER_X_CLASS)
@@ -35,8 +42,12 @@ function startGame() {
 
 }
 
-function handleCellClick(e) {
-    const cell= e.target
+function handleCellClick(e: Event) {
+    const cell = e.target as HTMLElement
+    if (!cell) {
+        throw new Error('clicked on something wrong')
+    }
+
     const currentClass = isPlayer_O_Turn ? PLAYER_O_CLASS : PLAYER_X_CLASS
     placeMark(cell, currentClass)
     if (checkWin(currentClass)) {
@@ -49,11 +60,14 @@ function handleCellClick(e) {
     }
 }
 
-function endGame(draw) {
+function endGame(draw: boolean) {
+    if (!winningMessageTextElement || !winningMessageElement) {
+        throw new Error('winningMessagElement missing')
+    }
     if (draw) {
     winningMessageTextElement.innerText = "It's a draw!"
 } else {
-    winningMessageTextElement.innerText = 'Player with $(isPlayer_O_Turn ? "O's" : "X's") wins!'
+    winningMessageTextElement.innerText = `Player with ${isPlayer_O_Turn ? "O's" : "x's"} wins!`
 }
     winningMessageElement.classList.add('show')
 }
@@ -64,7 +78,7 @@ function isDraw() {
     })
 }
 
-function placeMark(cell, currentClass) {
+function placeMark(cell: HTMLElement, currentClass: string) {
     cell.classList.add(currentClass)
 }
 
@@ -73,6 +87,9 @@ function swapTurns() {
 }
 
 function setBoardHoverClass() {
+    if (!boardElement) {
+        throw new Error('Fat fingers')
+    }
     boardElement.classList.remove(PLAYER_X_CLASS)
     boardElement.classList.remove(PLAYER_O_CLASS)
     if (isPlayer_O_Turn) {
@@ -82,7 +99,8 @@ function setBoardHoverClass() {
     }
 }
 
-function checkWin(currentClass) {
+function checkWin(currentClass: string) {
+    
     return WINNING_COMBINATIONS.some(combination => {
         return combination.every(index => {
             return cellElements[index].classList.contains(currentClass)
