@@ -1,3 +1,7 @@
+// COMMENTS ADDED
+document.addEventListener('DOMContentLoaded', () => {
+    
+})
 const PLAYER_X_CLASS = 'x'
 const PLAYER_O_CLASS = 'circle'
 const WINNING_COMBINATIONS = [

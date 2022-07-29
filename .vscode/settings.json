@@ -1,6 +1,1 @@
-{
-    "tsCompileOnSave.enabled": true,
-    "tsCompileOnSave.prefixes": [ 
-        "module/**"
-    ]
-}
+{}
