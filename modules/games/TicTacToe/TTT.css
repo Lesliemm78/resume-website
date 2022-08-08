@@ -1,9 +1,9 @@
 :root {
   --cell-size: 100px;
 
-  --color: #81c3fd;
-  --color-set: #0275d8;
-  --1: 10px;
+  --color: #fd81ee;
+  --color-set: #d4d802;
+  --l: 10px;
 }
 
 body {
@@ -129,6 +129,7 @@ body {
   border: 1px solid var(--color-set);
   padding: 0.25em 0.5em;
   cursor: pointer;
+  
 }
 
 .winning-message button:hover {
